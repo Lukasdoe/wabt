@@ -294,9 +294,10 @@ enum class RelocType {
   TableIndexRelSLEB64 = 24,     // Memory64: TableIndexRelSLEB
   MemoryAddressTLSSLEB64 = 25,  // Memory64: MemoryAddressTLSSLEB
   FuncIndexI32 = 26,            // Function index as an I32
+  FunctionInnerOffsetLEB = 27,  // Code offset in code metadata section
 
   First = FuncIndexLEB,
-  Last = FuncIndexI32,
+  Last = FunctionInnerOffsetLEB,
 };
 constexpr int kRelocTypeCount = WABT_ENUM_COUNT(RelocType);
 

@@ -72,6 +72,7 @@ const char* g_reloc_type_name[] = {
     "R_WASM_TABLE_INDEX_REL_SLEB64",
     "R_WASM_MEMORY_ADDR_TLS_SLEB64",
     "R_WASM_FUNCTION_INDEX_I32",
+    "R_WASM_FUNCTION_INNER_OFFSET_LEB",
 };
 WABT_STATIC_ASSERT(WABT_ARRAY_SIZE(g_reloc_type_name) == kRelocTypeCount);
 // clang-format on
